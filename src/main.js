@@ -13,16 +13,15 @@ import { router } from "./routes.js";
 // Initialize the Apify SDK
 await Actor.init();
 
-const startUrls = ["https://apify.c"];
+const startUrls = ["https://apify.crap"];
 
 const proxyConfiguration = await Actor.createProxyConfiguration();
 
 const crawler = new CheerioCrawler({
-    proxyConfiguration,
     requestHandler: router,
 });
 
-await crawler.run(startUrls);
+await crawler.run(somethingFun);
 
 // Exit successfully
 await Actor.exit();
