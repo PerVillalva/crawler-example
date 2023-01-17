@@ -5,15 +5,15 @@
  */
 
 // For more information, see https://sdk.apify.com
-import { Actor } from 'apify';
+import { Actor } from "apify";
 // For more information, see https://crawlee.dev
-import { CheerioCrawler } from 'crawlee';
-import { router } from './routes.js';
+import { CheerioCrawler } from "crawlee";
+import { router } from "./routes.js";
 
 // Initialize the Apify SDK
 await Actor.init();
 
-const startUrls = ['https://apify.com'];
+const startUrls = ["https://apify.c"];
 
 const proxyConfiguration = await Actor.createProxyConfiguration();
 
